@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "utility_python_script"
+version = "0.0.1"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+gymail = "*"
+helputils = "^1.4"
+
+[tool.poetry.scripts]
+pulseaudio_switch = "utility_python_script.pulseaudio_switch:main"
+rsync_python_script = "utility_python_script.rsync_python_script:main"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

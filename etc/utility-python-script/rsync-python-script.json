@@ -1,0 +1,12 @@
+{
+  "3tb-to-4tb": {
+    "src": "/mnt/3tb/file",
+    "dst": "/mnt/4tb01/file",
+    "mp": ["/mnt/3tb", "/mnt/4tb01"]
+  },
+  "user-dev-to-4tb": {
+    "src": "/home/user/dev",
+    "dst": "/mnt/3tb/dev",
+    "mp": ["/mnt/3tb", "/"]
+  }
+}
