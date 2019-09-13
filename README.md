@@ -18,7 +18,7 @@ index number of your soundcard by trying out the index numbers, starting from 0;
 #### Example
 `pulseaudio_switch --output_sink 1`
 
-### rsync-python
+### rsync_python_script
 
 #### Description
 Rsync files specified in a `JSON` config. If a mountpoint is specified, then only `rsync` if the
@@ -43,3 +43,26 @@ mountpoint is mounted.
 
 #### Run
 `rsync_python_script`
+
+### check_file_age
+Gather the file age and do an evaluation based on the file age.
+
+#### app
+##### app_virt_backup
+Get the file age of the `virt_backup` tar-files; if the file age is older than the configured
+`max_age`, then a warning mail is sent out.
+
+#### Config example
+```
+{
+  "app_virt_backup": {
+    "directory": [
+      "/mnt/3tb01/vm-backups/cloud01",
+      "/mnt/3tb01/vm-backups/cloud02",
+      "/mnt/3tb01/vm-backups/docker01"
+    ],
+      "evaluate_method": "default",
+      "max_age": 2
+  }
+}
+```

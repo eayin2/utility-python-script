@@ -26,6 +26,7 @@ setup(
     include_package_data=True,
     entry_points={
         "console_scripts": [
+            "check_file_age = utility_python_script.check_file_age:main",
             "pulseaudio_switch = utility_python_script.pulseaudio_switch:main",
             "rsync_python_script = utility_python_script.rsync_python_script:main",
         ],

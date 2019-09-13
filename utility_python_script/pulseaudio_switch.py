@@ -1,3 +1,8 @@
+"""
+# pulseaudio_switch
+Change the default audio device and move all active streams to the new audio device in
+pulseaudio.
+"""
 import argparse
 import re
 from subprocess import Popen, PIPE

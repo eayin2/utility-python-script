@@ -1,0 +1,11 @@
+{   
+  "app_virt_backup": {
+    "directory": [
+      "/mnt/3tb01/vm-backups/cloud01",
+      "/mnt/3tb01/vm-backups/phserver01",
+      "/mnt/3tb01/vm-backups/cx03"
+    ],
+      "evaluate_method": "default",
+      "max_age": 2
+  }
+}

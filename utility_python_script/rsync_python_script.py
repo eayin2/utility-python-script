@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-"""rsync-python-script.py
-
-Rsync multiple src directories to different dest directories over ssh. Later you may implement sendmail too here.
+"""
+# rsync-python-script.py
+Rsync files specified in a `JSON` config. If a mountpoint is specified, then only `rsync` if the
+mountpoint is mounted.
 """
 import errno
 import json
